@@ -1,0 +1,49 @@
+body{
+    font-family:monospace;
+    background-image: url("background.jpg");
+}
+
+#heading{
+    font-size: 36px;
+    border-style: solid;
+    border-color: rgb(0, 128, 255);
+    background-color: rgb(0, 128, 255);
+    margin-left: 450px;
+    margin-right:450px;
+    padding:15px;
+    border-radius:15px;
+}
+#heading:hover{
+    background-color:blue;
+    border-color:blue;
+    color:darkslategray;
+}
+
+#button{
+    margin-top:10px;
+    font-size: 20px;
+    border-style: solid;
+    border-color: rgb(0, 209, 45);
+    background-color: rgb(0, 209, 45);
+    margin-left: 450px;
+    margin-right:450px;
+    padding:10px;
+    border-radius:10px;
+    
+}
+canvas{
+    border-style: dotted;
+    animation-name: canvasAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+
+@keyframes canvasAnimation{
+    14% {box-shadow: 10px 10px 10px red}
+    28% {box-shadow: 10px 10px 10px orange}
+    42% {box-shadow: 10px 10px 10px yellow}
+    56% {box-shadow: 10px 10px 10px rgb(0, 190, 0)}
+    70% {box-shadow: 10px 10px 10px rgb(0, 128, 202)}
+    84% {box-shadow: 10px 10px 10px rgb(189, 0, 189)}
+    98% {box-shadow: 10px 10px 10px rgb(255, 137, 157)}
+}
